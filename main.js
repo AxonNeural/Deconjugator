@@ -38,4 +38,4 @@ let radicals = [...new Set(words.map(word => get_radical(word)))];
 let final_data = {};
 
 for (const array of radicals) final_data[array[0]] = array[1];
-fs.writeFileSync('Output/Radicals.json', JSON.stringify(final_data), { encoding: 'utf-8' });
+fs.writeFileSync('Output/Radicals.json', JSON.stringify(final_data), { encoding: 'utf-8' }); 
